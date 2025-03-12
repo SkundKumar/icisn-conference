@@ -26,7 +26,8 @@ export default function WelcomeSection() {
     if (textRef.current) observer.observe(textRef.current)
 
     return () => observer.disconnect()
-  }, [])
+  }, []
+) 
 
   return (
     <section className="py-20 md:py-32 bg-background">
