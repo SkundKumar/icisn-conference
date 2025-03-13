@@ -1,19 +1,93 @@
+"use client"
+
 import type { Metadata } from "next"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-
-export const metadata: Metadata = {
-  title: "For Attendees - ICISN 2025",
-  description: "Information for attendees of the Fifth International Conference on Intelligent Systems and Networks",
-}
+import { useState } from "react";
+import { FiMenu, FiX } from "react-icons/fi";
 
 export default function ForAttendeesPage() {
+  
+const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+const [activeTab, setActiveTab] = useState("registration");
   return (
     <div className="container mx-auto px-4 py-24 md:px-6 mt-20">
       <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-12 text-center">For Attendees</h1>
 
-      <Tabs defaultValue="registration" className="max-w-4xl mx-auto">
-        <TabsList className="grid w-full grid-cols-6">
+      <Tabs value={activeTab} onValueChange={setActiveTab} className="max-w-4xl mx-auto relative">
+        {/* Mobile: Hamburger Button (Positioned to the right) */}
+        <div className="md:hidden flex justify-end">
+          <button
+            className="p-3 rounded-md text-white bg-black"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          >
+            {mobileMenuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
+          </button>
+        </div>
+
+        {/* Mobile Menu (Slide-down animation, right-aligned) */}
+        <div
+          className={`absolute right-4 top-20 w-48 rounded-lg shadow-lg bg-black text-white transition-all duration-300 
+          ${mobileMenuOpen ? "opacity-100 scale-100 visible" : "opacity-0 scale-95 invisible"}`}
+        >
+          <button
+            className="block w-full text-left px-4 py-2 hover:bg-gray-700"
+            onClick={() => {
+              setActiveTab("registration");
+              setMobileMenuOpen(false);
+            }}
+          >
+            Registration
+          </button>
+          <button
+            className="block w-full text-left px-4 py-2 hover:bg-gray-700"
+            onClick={() => {
+              setActiveTab("Submission");
+              setMobileMenuOpen(false);
+            }}
+          >
+            Submission
+          </button>
+          <button
+            className="block w-full text-left px-4 py-2 hover:bg-gray-700"
+            onClick={() => {
+              setActiveTab("important dates");
+              setMobileMenuOpen(false);
+            }}
+          >
+            Important Dates
+          </button>
+          <button
+            className="block w-full text-left px-4 py-2 hover:bg-gray-700"
+            onClick={() => {
+              setActiveTab("accommodation");
+              setMobileMenuOpen(false);
+            }}
+          >
+            Accommodation
+          </button>
+          <button
+            className="block w-full text-left px-4 py-2 hover:bg-gray-700"
+            onClick={() => {
+              setActiveTab("program");
+              setMobileMenuOpen(false);
+            }}
+          >
+            Program
+          </button>
+          <button
+            className="block w-full text-left px-4 py-2 hover:bg-gray-700"
+            onClick={() => {
+              setActiveTab("publication");
+              setMobileMenuOpen(false);
+            }}
+          >
+            Publication
+          </button>
+        </div>
+
+        {/* Desktop View: TabsList (Always Visible) */}
+        <TabsList className="hidden md:grid w-full grid-cols-6 bg-black text-white">
           <TabsTrigger value="registration">Registration</TabsTrigger>
           <TabsTrigger value="Submission">Submission</TabsTrigger>
           <TabsTrigger value="important dates">Important Dates</TabsTrigger>
@@ -21,6 +95,7 @@ export default function ForAttendeesPage() {
           <TabsTrigger value="program">Program</TabsTrigger>
           <TabsTrigger value="publication">Publication</TabsTrigger>
         </TabsList>
+
 
         <TabsContent value="registration" className="mt-6">
           <Card>
