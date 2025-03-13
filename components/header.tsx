@@ -9,12 +9,12 @@ import { usePathname } from "next/navigation"
 
 const navItems = [
   { name: "HOME", path: "/" },
-  { name: "COMMITTEE", path: "#" },
-  { name: "KEYNOTE SPEAKERS", path: "#" },
-  { name: "CALL FOR PAPERS", path: "#" },
-  { name: "FOR ATTENDEES", path: "#" },
-  { name: "HISTORY", path: "#" },
-  { name: "CONTACT US", path: "#" },
+  { name: "COMMITTEE", path: "/committee" },
+  { name: "KEYNOTE SPEAKERS", path: "/keynote-speakers" },
+  { name: "CALL FOR PAPERS", path: "/call-for-papers" },
+  { name: "FOR ATTENDEES", path: "/for-attendees" },
+  { name: "HISTORY", path: "/history" },
+  { name: "CONTACT US", path: "/contact" },
 ]
 
 export default function Header() {
