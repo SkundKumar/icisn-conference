@@ -56,6 +56,7 @@ export default function Header() {
                   
                   
                   pathname === item.path ? "text-primary border-b-2 border-primary pb-1" : pathname === "/" ?  "text-white" : "text-muted-foreground",
+                  scrolled ? "text-primary" :pathname === "/" ?  "text-white" : "text-primary/70"
                 )}
               >
                 {item.name}
