@@ -34,7 +34,7 @@ export default function HeroSection() {
   })
 
   // Apply a vertical movement effect
-  const yTransform = useTransform(scrollYProgress, [0, 0.4], ["-1000px", "1500px"])
+  const yTransform = useTransform(scrollYProgress, [0, 0.4], ["-700px", "700px"])
   return (
     <section className="relative h-screen w-full overflow-hidden">
       <div className="absolute inset-0 z-0">
@@ -49,7 +49,7 @@ export default function HeroSection() {
       </div>
 
       <div className="relative z-10 flex h-full items-center justify-center">
-        <div className="container mx-auto px-4 text-center text-white md:px-6">
+        <div className="container mt-96 mx-auto px-4 text-center text-white md:px-6">
         <motion.h1
             ref={titleRef}
             style={{ y: yTransform,  }} // Apply motion
