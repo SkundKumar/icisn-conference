@@ -42,7 +42,7 @@ export default function Header() {
         <div className="flex h-20 items-center justify-between">
           <Link href="/" className="flex items-center space-x-2" onClick={() => setIsOpen(false)}>
             <span className={cn("text-2xl font-bold tracking-tighter font-playfair",
-              scrolled ? "text-primary" : "text-primary/70"
+              scrolled ? "text-primary" :pathname === "/" ?  "text-white" : "text-primary/70"
             )}>ICISN</span>
           </Link>
           <nav className="hidden md:flex  space-x-6">
@@ -55,7 +55,7 @@ export default function Header() {
                   "text-sm font-medium tracking-wider transition-colors",
                   
                   
-                  pathname === item.path ? "text-primary border-b-2 border-primary pb-1" : "text-muted-foreground",
+                  pathname === item.path ? "text-primary border-b-2 border-primary pb-1" : pathname === "/" ?  "text-white" : "text-muted-foreground",
                 )}
               >
                 {item.name}
