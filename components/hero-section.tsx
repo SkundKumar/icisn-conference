@@ -70,7 +70,7 @@ export default function HeroSection() {
             className="opacity-0 mt-8 inline-block rounded-full border border-white/30 bg-black/30 px-6 py-3 backdrop-blur-sm"
             style={{ y: yTransform,  }}
           >
-            <p className="text-lg font-medium md:text-xl">Hanoi University of Industry, 22-23 March, 2026</p>
+            <p className="text-lg font-medium md:text-xl">Hanoi University of Industry, 21-22 March, 2026</p>
           </motion.div>
         </div>
       </div>
