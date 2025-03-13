@@ -87,7 +87,7 @@ const [activeTab, setActiveTab] = useState("registration");
         </div>
 
         {/* Desktop View: TabsList (Always Visible) */}
-        <TabsList className="hidden md:grid w-full grid-cols-6 bg-black text-white">
+        <TabsList className="hidden md:grid w-full grid-cols-6 bg-foreground text-background">
           <TabsTrigger value="registration">Registration</TabsTrigger>
           <TabsTrigger value="Submission">Submission</TabsTrigger>
           <TabsTrigger value="important dates">Important Dates</TabsTrigger>
@@ -113,8 +113,8 @@ const [activeTab, setActiveTab] = useState("registration");
                   <thead className="bg-muted">
                     <tr>
                       <th className="p-3 text-left">Category</th>
-                      <th className="p-3 text-left">Early Registration (Before Feb 21, 2025)</th>
-                      <th className="p-3 text-left">Late Registration (Feb 22 - Mar 1, 2025)</th>
+                      <th className="p-3 text-left">Early Registration (Before Feb 21, 2026)</th>
+                      <th className="p-3 text-left">Late Registration (Feb 22 - Mar 1, 2026)</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -143,7 +143,7 @@ const [activeTab, setActiveTab] = useState("registration");
 
               <h3 className="text-xl font-semibold mt-4">Refund Policy</h3>
               <p>
-                If an author wishes to cancel their registration, a 50% refund will be provided if the request is made before February 20, 2025. After this date, no refunds will be issued.
+                If an author wishes to cancel their registration, a 50% refund will be provided if the request is made before February 20, 2026. After this date, no refunds will be issued.
               </p>
 
               <h3 className="text-xl font-semibold mt-4">One-Day Attendance</h3>
@@ -165,13 +165,13 @@ const [activeTab, setActiveTab] = useState("registration");
                 <strong>Account Number:</strong> 3100201013188<br />
                 <strong>Bank Name:</strong> Vietnam Bank for Agriculture and Rural Development - Tu Liem Branch<br />
                 <strong>Swift Code:</strong> VBAAVNVX406<br />
-                <strong>Transfer Content:</strong> ICISN 2025 ID paper...
+                <strong>Transfer Content:</strong> ICISN 2026 ID paper...
               </p>
 
               <h4 className="text-lg font-semibold mt-2">PayPal</h4>
               <p>
                 <a href="https://www.paypal.me/dieulinh79" className="text-blue-500 underline" target="_blank" rel="noopener noreferrer">Pay via PayPal</a><br />
-                <strong>Transfer Content:</strong> ICISN 2025 ID paper...
+                <strong>Transfer Content:</strong> ICISN 2026 ID paper...
               </p>
 
               <h3 className="text-xl font-semibold mt-4">Post-Payment Submission</h3>
@@ -228,7 +228,7 @@ const [activeTab, setActiveTab] = useState("registration");
         All full papers must be submitted through the Conference Management Toolkit (CMT) portal.
       </p>
       <p>
-        🔗 <a href="https://cmt3.research.microsoft.com/ICISN2025" className="text-blue-500 underline" target="_blank" rel="noopener noreferrer">Submit via CMT</a>
+        🔗 <a href="https://cmt3.research.microsoft.com/ICISN2026" className="text-blue-500 underline" target="_blank" rel="noopener noreferrer">Submit via CMT</a>
       </p>
 
       <h3 className="text-xl font-semibold mt-4">General Requirements</h3>
@@ -246,7 +246,7 @@ const [activeTab, setActiveTab] = useState("registration");
         </li>
         <li>
           <strong>Conference Selection:</strong>  
-          Select "ICISN 2025" from the list and review the submission guidelines.
+          Select "ICISN 2026" from the list and review the submission guidelines.
         </li>
         <li>
           <strong>Paper Submission:</strong>  
@@ -284,7 +284,7 @@ const [activeTab, setActiveTab] = useState("registration");
 
       <h3 className="text-xl font-semibold mt-4">Contact for Submissions</h3>
       <p>
-        📧 <strong>Email:</strong> <a href="mailto:submissions@icisn2025.com" className="text-blue-500 underline">submissions@icisn2025.com</a>
+        📧 <strong>Email:</strong> <a href="mailto:submissions@icisn2026.com" className="text-blue-500 underline">submissions@icisn2026.com</a>
         <br />
         📞 <strong>Phone:</strong> +84 906165579
       </p>
@@ -298,7 +298,7 @@ const [activeTab, setActiveTab] = useState("registration");
     </CardHeader>
     <CardContent className="space-y-4">
       <p>
-        The proceedings of The <strong>International Conference on Intelligent Systems & Networks (ICISN 2025)</strong> will be published in the <strong>Lecture Notes in Networks and Systems (LNNS)</strong> series by Springer.
+        The proceedings of The <strong>International Conference on Intelligent Systems & Networks (ICISN 2026)</strong> will be published in the <strong>Lecture Notes in Networks and Systems (LNNS)</strong> series by Springer.
       </p>
 
       <p>
@@ -321,7 +321,7 @@ const [activeTab, setActiveTab] = useState("registration");
     </CardHeader>
     <CardContent className="space-y-4">
       <p>
-        Please take note of the important deadlines for ICISN 2025. Ensure timely submission and registration to avoid any issues.
+        Please take note of the important deadlines for ICISN 2026. Ensure timely submission and registration to avoid any issues.
       </p>
 
       <h3 className="text-xl font-semibold mt-4">Submission & Decision Deadlines</h3>
@@ -340,7 +340,7 @@ const [activeTab, setActiveTab] = useState("registration");
             </tr>
             <tr className="border-t">
               <td className="p-3">Papers Decision</td>
-              <td className="p-3">18 January 2025, 14 February 2025</td>
+              <td className="p-3">18 January 2026, 14 February 2026</td>
             </tr>
           </tbody>
         </table>
@@ -358,11 +358,11 @@ const [activeTab, setActiveTab] = useState("registration");
           <tbody>
             <tr className="border-t">
               <td className="p-3">Early Registration</td>
-              <td className="p-3">21 February 2025</td>
+              <td className="p-3">21 February 2026</td>
             </tr>
             <tr className="border-t">
               <td className="p-3">Late Registration</td>
-              <td className="p-3">After 10 March 2025</td>
+              <td className="p-3">After 10 March 2026</td>
             </tr>
           </tbody>
         </table>
@@ -483,11 +483,11 @@ const [activeTab, setActiveTab] = useState("registration");
       <CardTitle>Conference Program</CardTitle>
     </CardHeader>
     <CardContent className="space-y-6">
-      <p>The detailed program for ICISN 2025 is outlined below.</p>
+      <p>The detailed program for ICISN 2026 is outlined below.</p>
 
-      {/* Day 1 - March 22, 2025 */}
+      {/* Day 1 - March 22, 2026 */}
       <div className="border-b pb-4">
-        <h3 className="text-2xl font-bold mt-6">Day 1 (March 22, 2025)</h3>
+        <h3 className="text-2xl font-bold mt-6">Day 1 (March 22, 2026)</h3>
         <p className="text-lg"><strong>Time:</strong> 07:30 - 20:00</p>
         <p className="text-lg"><strong>Venue:</strong> Meeting Room, 4th floor, A1 Building</p>
       </div>
@@ -496,7 +496,7 @@ const [activeTab, setActiveTab] = useState("registration");
         <li><strong>07:30 - 08:30:</strong> Registration</li>
         <li><strong>08:30 - 08:40:</strong> MC Introduction</li>
         <li><strong>08:40 - 08:45:</strong> Welcome Speech from HaiU</li>
-        <li><strong>08:45 - 08:50:</strong> Speech from ICISN 2025 Program Chair</li>
+        <li><strong>08:45 - 08:50:</strong> Speech from ICISN 2026 Program Chair</li>
 
         <hr />
 
@@ -533,9 +533,9 @@ const [activeTab, setActiveTab] = useState("registration");
         <li className="text-gray-500"><strong>18:30 - 20:00:</strong> 🎉 Gala Dinner</li>
       </ul>
 
-      {/* Day 2 - March 23, 2025 */}
+      {/* Day 2 - March 23, 2026 */}
       <div className="border-b pb-4">
-        <h3 className="text-2xl font-bold mt-6">Day 2 (March 23, 2025)</h3>
+        <h3 className="text-2xl font-bold mt-6">Day 2 (March 23, 2026)</h3>
         <p className="text-lg"><strong>Time:</strong> 08:30 - 12:00</p>
         <p className="text-lg"><strong>Venue:</strong> Meeting Room, 4th floor, A1 Building</p>
       </div>
