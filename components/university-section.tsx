@@ -59,7 +59,7 @@ export default function UniversitySection() {
   className=" relative h-[400px] overflow-hidden rounded-lg"
 >
 <Image
-  src="https://i.pinimg.com/736x/b6/de/fb/b6defbf069e8ac0051c9e82589e9f856.jpg"
+  src="https://icisn.com/wp-content/uploads/elementor/thumbs/2c38476e-5697-4081-ba2f-75f674d7b047-qnf7op741ig6i11kxrcxs954wyatwu8x2139hzb8gw.jpg"
   alt="Hanoi University of Industry"
   fill
   className="absolute inset-0 object-cover"

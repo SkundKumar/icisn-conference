@@ -1,10 +1,11 @@
-import type { Metadata } from "next"
-import Image from "next/image"
+import type { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "History - ICISN 2025",
   description: "History of the International Conference on Intelligent Systems and Networks",
-}
+};
 
 export default function HistoryPage() {
   return (
@@ -14,115 +15,83 @@ export default function HistoryPage() {
       </h1>
 
       <div className="max-w-4xl mx-auto">
-        <p className="text-lg mb-8">
-          The International Conference on Intelligent Systems and Networks (ICISN) has a rich history of bringing
-          together researchers, academics, and industry professionals to discuss the latest advancements in intelligent
-          systems and networks.
+        <p className="text-lg mb-8 text-center">
+          The International Conference on Intelligent Systems and Networks (ICISN) has a strong tradition of bringing 
+          together researchers, academics, and industry professionals to explore advancements in intelligent systems and networks.
         </p>
 
         <div className="space-y-16">
+          {/* ICISN 2025 - Coming Soon */}
+          <div className="text-center border p-6 rounded-lg shadow-md bg-white">
+            <h2 className="text-2xl font-bold mb-2 text-black">ICISN 2025</h2>
+            <p className="text-lg text-black font-playfair">Coming Soon...</p>
+          </div>
+
+          {/* ICISN 2024 */}
           <div className="grid gap-8 md:grid-cols-2 items-center">
             <div className="relative h-[300px] overflow-hidden rounded-lg">
-              <Image src="/placeholder.svg?height=600&width=800" alt="ICISN 2024" fill className="object-cover" />
+              <Image src="https://media.springernature.com/full/springer-static/cover-hires/book/978-981-97-5504-2?as=webp" alt="ICISN 2024" fill className="object-contain" />
             </div>
             <div>
               <h2 className="text-2xl font-bold mb-4">ICISN 2024</h2>
               <p className="mb-2">
-                <strong>Location:</strong> Bangkok, Thailand
-              </p>
-              <p className="mb-2">
-                <strong>Date:</strong> March 18-19, 2024
-              </p>
-              <p className="mb-2">
-                <strong>Theme:</strong> Intelligent Systems for Smart Cities
-              </p>
-              <p className="mb-4">
-                The fourth ICISN conference focused on the application of intelligent systems in developing smart
-                cities. The conference featured 150 papers from 25 countries and had over 300 attendees.
-              </p>
-              <p>
-                <strong>Keynote Speakers:</strong> Prof. Sarah Chen (MIT), Dr. Robert Kim (Samsung Research)
+                <strong>Proceedings:</strong>{" "}
+                <Link href="https://link.springer.com/book/9789819755035" target="_blank" className="text-blue-300 underline">
+                  Springer Link
+                </Link>
               </p>
             </div>
           </div>
 
+          {/* ICISN 2023 */}
           <div className="grid gap-8 md:grid-cols-2 items-center md:flex-row-reverse">
             <div className="relative h-[300px] overflow-hidden rounded-lg md:order-2">
-              <Image src="/placeholder.svg?height=600&width=800" alt="ICISN 2023" fill className="object-cover" />
+              <Image src="https://media.springernature.com/full/springer-static/cover-hires/book/978-981-99-4725-6?as=webp" alt="ICISN 2023" fill className="object-contain" />
             </div>
             <div className="md:order-1">
               <h2 className="text-2xl font-bold mb-4">ICISN 2023</h2>
               <p className="mb-2">
-                <strong>Location:</strong> Singapore
-              </p>
-              <p className="mb-2">
-                <strong>Date:</strong> March 25-26, 2023
-              </p>
-              <p className="mb-2">
-                <strong>Theme:</strong> AI and Networks in Healthcare
-              </p>
-              <p className="mb-4">
-                The third ICISN conference explored the intersection of AI, networks, and healthcare. The conference
-                featured 120 papers from 22 countries and had over 250 attendees.
-              </p>
-              <p>
-                <strong>Keynote Speakers:</strong> Prof. Michael Wong (Stanford), Dr. Lisa Park (IBM Research)
+                <strong>Proceedings:</strong>{" "}
+                <Link href="https://link.springer.com/book/10.1007/978-981-99-4725-6" target="_blank" className="text-blue-300 underline">
+                  Springer Link
+                </Link>
               </p>
             </div>
           </div>
 
+          {/* ICISN 2022 */}
           <div className="grid gap-8 md:grid-cols-2 items-center">
             <div className="relative h-[300px] overflow-hidden rounded-lg">
-              <Image src="/placeholder.svg?height=600&width=800" alt="ICISN 2022" fill className="object-cover" />
+              <Image src="https://media.springernature.com/full/springer-static/cover-hires/book/978-981-19-3394-3?as=webp" alt="ICISN 2022" fill className="object-contain" />
             </div>
             <div>
               <h2 className="text-2xl font-bold mb-4">ICISN 2022</h2>
               <p className="mb-2">
-                <strong>Location:</strong> Seoul, South Korea
-              </p>
-              <p className="mb-2">
-                <strong>Date:</strong> March 19-20, 2022
-              </p>
-              <p className="mb-2">
-                <strong>Theme:</strong> Intelligent Networks for Industry 4.0
-              </p>
-              <p className="mb-4">
-                The second ICISN conference focused on intelligent networks for Industry 4.0. The conference featured
-                100 papers from 18 countries and had over 200 attendees.
-              </p>
-              <p>
-                <strong>Keynote Speakers:</strong> Prof. David Lee (Georgia Tech), Dr. Anna Wang (Microsoft Research)
+                <strong>Proceedings:</strong>{" "}
+                <Link href="https://link.springer.com/book/10.1007/978-981-19-3394-3" target="_blank" className="text-blue-300 underline">
+                  Springer Link
+                </Link>
               </p>
             </div>
           </div>
 
+          {/* ICISN 2021 */}
           <div className="grid gap-8 md:grid-cols-2 items-center md:flex-row-reverse">
             <div className="relative h-[300px] overflow-hidden rounded-lg md:order-2">
-              <Image src="/placeholder.svg?height=600&width=800" alt="ICISN 2021" fill className="object-cover" />
+              <Image src="https://media.springernature.com/full/springer-static/cover-hires/book/978-981-16-2094-2?as=webp" alt="ICISN 2021" fill className="object-contain" />
             </div>
             <div className="md:order-1">
               <h2 className="text-2xl font-bold mb-4">ICISN 2021</h2>
               <p className="mb-2">
-                <strong>Location:</strong> Virtual Conference
-              </p>
-              <p className="mb-2">
-                <strong>Date:</strong> March 27-28, 2021
-              </p>
-              <p className="mb-2">
-                <strong>Theme:</strong> Emerging Trends in Intelligent Systems
-              </p>
-              <p className="mb-4">
-                The inaugural ICISN conference was held virtually due to the COVID-19 pandemic. Despite the challenges,
-                the conference was a success with 80 papers from 15 countries and over 150 virtual attendees.
-              </p>
-              <p>
-                <strong>Keynote Speakers:</strong> Prof. James Wilson (UC Berkeley), Dr. Emily Chen (Google AI)
+                <strong>Proceedings:</strong>{" "}
+                <Link href="https://link.springer.com/book/10.1007/978-981-16-2094-2" target="_blank" className="text-blue-300 underline">
+                  Springer Link
+                </Link>
               </p>
             </div>
           </div>
         </div>
       </div>
     </div>
-  )
+  );
 }
-

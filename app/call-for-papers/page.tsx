@@ -13,100 +13,120 @@ export default function CallForPapersPage() {
 
       <div className="max-w-3xl mx-auto">
         <p className="text-lg mb-8">
-          We invite original and unpublished research papers for the Fifth International Conference on Intelligent
-          Systems and Networks (ICISN 2025). The conference will focus on the latest advancements in intelligent systems
-          and networks.
+          In this conference, we solicit high-quality unpublished contributions. The aim of this conference is to share new findings, exchange ideas, and discuss research challenges. The conference program will run for two days with regular tracks, tutorials, and special sessions. For the tracks and special sessions, we invite you to contribute your original work on topics in the following, but not limited to, areas:
         </p>
 
-        <Card className="mb-8">
-          <CardHeader>
-            <CardTitle>Important Dates</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <ul className="space-y-2">
-              <li className="flex justify-between">
-                <span>Paper Submission Deadline:</span>
-                <span className="font-semibold">December 15, 2024</span>
-              </li>
-              <li className="flex justify-between">
-                <span>Notification of Acceptance:</span>
-                <span className="font-semibold">January 20, 2025</span>
-              </li>
-              <li className="flex justify-between">
-                <span>Camera-Ready Submission:</span>
-                <span className="font-semibold">February 10, 2025</span>
-              </li>
-              <li className="flex justify-between">
-                <span>Early Registration Deadline:</span>
-                <span className="font-semibold">February 20, 2025</span>
-              </li>
-              <li className="flex justify-between">
-                <span>Conference Dates:</span>
-                <span className="font-semibold">March 22-23, 2025</span>
-              </li>
-            </ul>
-          </CardContent>
-        </Card>
-
         <h2 className="text-2xl font-bold mb-4">Topics of Interest</h2>
-        <p className="mb-4">Topics of interest include, but are not limited to:</p>
-
         <div className="grid gap-4 md:grid-cols-2 mb-8">
           <Card>
             <CardHeader>
-              <CardTitle>Intelligent Systems</CardTitle>
+              <CardTitle>Foundations of Computer Science</CardTitle>
             </CardHeader>
             <CardContent>
               <ul className="list-disc pl-5 space-y-1">
-                <li>Artificial Intelligence</li>
-                <li>Machine Learning</li>
-                <li>Deep Learning</li>
-                <li>Natural Language Processing</li>
-                <li>Computer Vision</li>
-                <li>Expert Systems</li>
-                <li>Fuzzy Logic</li>
-                <li>Evolutionary Computing</li>
+                <li>Theory of Computation</li>
+                <li>Algorithms and Data Structures</li>
+                <li>Programming Language Theory</li>
+                <li>Applied Computer Science</li>
+                <li>Computer Security and Cryptography</li>
+                <li>Computational Science</li>
               </ul>
             </CardContent>
           </Card>
 
           <Card>
             <CardHeader>
-              <CardTitle>Networks</CardTitle>
+              <CardTitle>Computational Intelligence & Language Processing</CardTitle>
             </CardHeader>
             <CardContent>
               <ul className="list-disc pl-5 space-y-1">
-                <li>5G/6G Networks</li>
-                <li>Internet of Things (IoT)</li>
-                <li>Network Security</li>
-                <li>Cloud Computing</li>
-                <li>Edge Computing</li>
-                <li>Software-Defined Networks</li>
-                <li>Wireless Sensor Networks</li>
-                <li>Network Protocols</li>
+                <li>Soft Computing</li>
+                <li>Computer Vision</li>
+                <li>Bioinformatics</li>
+                <li>Knowledge Discovery</li>
+                <li>Data Mining</li>
+                <li>Machine Learning & Deep Learning</li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle>Signal Processing</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul className="list-disc pl-5 space-y-1">
+                <li>Signal, Image, and Video Processing</li>
+                <li>Signal Processing for Communications</li>
+                <li>Signal Processing for Big Data</li>
+                <li>Signal Processing for IoT</li>
+                <li>Bio-Imaging and Biomedical Signal Processing</li>
+                <li>Telemedical and E-Hospital Biomechanics</li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle>Software Engineering & Development</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul className="list-disc pl-5 space-y-1">
+                <li>Software System Modeling</li>
+                <li>Component-Based, Model-Driven, and Automated Software Engineering</li>
+                <li>Open Source Software Development</li>
+                <li>Software Process</li>
+                <li>Testing and Verification</li>
+                <li>Multi-Core Programming</li>
+                <li>Real-Time Systems</li>
+                <li>Web Services</li>
+                <li>Human-Computer Interaction</li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle>Distributed Computing and Communication Networks</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul className="list-disc pl-5 space-y-1">
+                <li>Big Data and Analysis</li>
+                <li>Multimedia and Social Computing</li>
+                <li>Network Architectures</li>
+                <li>Network Protocols and Security</li>
+                <li>Parallel and Distributed Computing</li>
+                <li>Grid Computing</li>
+                <li>Fog, Edge, and Cloud Computing</li>
+                <li>Mobile and Ubiquitous Computing</li>
+                <li>Quantum Communications Network</li>
+                <li>Security Information & Coding Theory</li>
+                <li>Communication Quality, Reliability & Modelling</li>
+                <li>Wireless and Mobile Networks</li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle>Microwave Engineering, Antennas, and Propagation</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul className="list-disc pl-5 space-y-1">
+                <li>Microwave Theory & Techniques</li>
+                <li>RF, Microwave Circuits, Systems & Applications</li>
+                <li>Millimeter-Wave, THz Technologies, and Systems</li>
+                <li>Power Amplifier Devices and Circuits</li>
+                <li>Antenna Systems</li>
+                <li>Integrated Antennas, Active Adaptive, and Smart Antennas</li>
+                <li>Digital Beamforming, Related Circuits, and Components</li>
+                <li>Electromagnetic Scattering, Channel Measurement, and Propagation</li>
+                <li>Computational Methods for Wave Propagation</li>
               </ul>
             </CardContent>
           </Card>
         </div>
-
-        <h2 className="text-2xl font-bold mb-4">Submission Guidelines</h2>
-        <p className="mb-4">
-          All papers must be original and not simultaneously submitted to another journal or conference. The following
-          paper categories are welcome:
-        </p>
-
-        <ul className="list-disc pl-5 space-y-2 mb-8">
-          <li>Full research papers (8-10 pages)</li>
-          <li>Short papers (4-6 pages)</li>
-          <li>Poster presentations (2-4 pages)</li>
-        </ul>
-
-        <p>
-          Please submit your papers through the conference submission system. All submissions will be peer-reviewed by
-          at least three members of the program committee.
-        </p>
       </div>
     </div>
   )
 }
-

@@ -66,7 +66,7 @@ export default function Header() {
           </nav>
           <div className="cursor-pointer border-2 border-black bg-gray-500 pb-[7px] transition ease-in-out duration-100 select-none active:pb-0 active:mb-[10px] active:translate-y-[10px]">
       <button className="bg-gray-300 border-2 font-mono border-white px-2 py-1">
-        <span className="text-sm tracking-wider">Submit Paper</span>
+        <span className="text-sm text-black tracking-wider">Submit Paper</span>
       </button>
     </div>
           <Button variant="ghost" size="icon" className="md:hidden" onClick={() => setIsOpen(!isOpen)}>

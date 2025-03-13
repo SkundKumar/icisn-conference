@@ -26,7 +26,7 @@ export default function ContactSection() {
   }, [])
 
   return (
-    <section className="py-12 md:py-20 bg-primary text-primary-foreground">
+    <section className="py-12 md:py-20 bg-background text-background-foreground">
       <div className="container mx-auto px-4 md:px-6">
         <h2
           ref={titleRef}
