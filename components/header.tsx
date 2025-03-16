@@ -39,7 +39,7 @@ export default function Header() {
       )}
     >
       <div className="container mx-auto px-4 md:px-6">
-        <div className="flex h-20 items-center justify-between">
+        <div className="flex h-20 items-center justify-around">
           <Link href="/" className="flex items-center space-x-2" onClick={() => setIsOpen(false)}>
             <span className={cn("text-2xl font-bold tracking-tighter font-playfair",
               scrolled ? "text-primary" :pathname === "/" ?  "text-white" : "text-primary/70"
@@ -65,11 +65,13 @@ export default function Header() {
             ))}
             
           </nav>
-          <div className="cursor-pointer border-2 border-black bg-gray-500 pb-[7px] transition ease-in-out duration-100 select-none active:pb-0 active:mb-[10px] active:translate-y-[10px]">
-      <button className="bg-gray-300 border-2 font-mono border-white px-2 py-1">
-        <span className="text-sm text-black tracking-wider">Submit Paper</span>
-      </button>
-    </div>
+          <button className="relative px-6 py-2 font-medium text-primary border border-primary 
+  rounded-lg overflow-hidden transition-all duration-300 ease-in-out
+  before:absolute before:inset-0 before:bg-primary before:scale-x-0 before:origin-left 
+  before:transition-transform before:duration-300 before:ease-in-out
+  hover:before:scale-x-100 hover:text-white focus:outline-none focus:ring-2 focus:ring-primary/50 hover:bg-black">
+  Submit Papers
+</button>
           <Button variant="ghost" size="icon" className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
             <Menu className={cn("h-6 w-6", isOpen ? "hidden" : "block")} />
             <X className={cn("h-6 w-6", isOpen ? "block" : "hidden")} />

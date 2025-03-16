@@ -2,77 +2,95 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800&family=Lora:wght@300;400&display=swap');
+
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 240 10% 3.9%;
-    --card: 0 0% 100%;
-    --card-foreground: 240 10% 3.9%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 240 10% 3.9%;
-    --primary: 240 5.9% 10%;
-    --primary-foreground: 0 0% 98%;
-    --secondary: 240 4.8% 95.9%;
-    --secondary-foreground: 240 5.9% 10%;
-    --muted: 240 4.8% 95.9%;
-    --muted-foreground: 240 3.8% 46.1%;
-    --accent: 240 4.8% 95.9%;
-    --accent-foreground: 240 5.9% 10%;
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 240 5.9% 90%;
-    --input: 240 5.9% 90%;
-    --ring: 240 5.9% 10%;
-    --radius: 0.5rem;
+    /* 🎓 ACADEMIC & PROFESSIONAL COLORS */
+    --background: hsl(220, 50%, 96%); /* Light Grayish Blue */
+    --foreground: hsl(220, 100%, 20%); /* Deep Navy Blue */
+    
+    /* 📄 CARD & POPOVER */
+    --card: hsl(0, 0%, 100%); /* Pure White */
+    --card-foreground: hsl(220, 100%, 20%);
+    --popover: hsl(0, 0%, 100%);
+    --popover-foreground: hsl(220, 100%, 20%);
+
+    /* 🌊 PRIMARY - INTELLIGENT & INNOVATIVE */
+    --primary: hsl(178, 100%, 40%); /* Teal Blue */
+    --primary-foreground: hsl(0, 0%, 100%); /* White */
+    
+    /* 🎓 SECONDARY - PRESTIGE & STABILITY */
+    --secondary: hsl(220, 100%, 20%); /* Deep Navy Blue */
+    --secondary-foreground: hsl(0, 0%, 100%);
+
+    /* 🔄 MUTED COLORS FOR BACKGROUND ELEMENTS */
+    --muted: hsl(220, 50%, 96%);
+    --muted-foreground: hsl(220, 80%, 20%);
+
+    /* 🔥 ACCENT COLOR FOR HIGHLIGHTS */
+    --accent: hsl(16, 100%, 65%); /* Bright Orange */
+    --accent-foreground: hsl(0, 0%, 100%);
+
+    /* ❗ ERROR / DESTRUCTIVE COLORS */
+    --destructive: hsl(16, 100%, 65%);
+    --destructive-foreground: hsl(0, 0%, 100%);
+
+    /* 📏 BORDERS & FORMS */
+    --border: hsl(220, 100%, 20%);
+    --input: hsl(220, 100%, 20%);
+    
+    /* 🔵 RING COLOR FOR FOCUS */
+    --ring: hsl(178, 100%, 40%);
   }
 
+  /* 🌙 DARK MODE – INTELLIGENT & PROFESSIONAL */
   .dark {
-    --background: 220 90% 95%; /* Light Blue */
-    --foreground: 220 15% 25%; /* Slightly lighter Dark Blue */
-    --card: 220 90% 95%;
-    --card-foreground: 220 15% 25%;
-    --popover: 220 90% 95%;
-    --popover-foreground: 220 15% 25%;
-    --primary: 220 70% 40%; /* Medium Blue */
-    --primary-foreground: 0 0% 98%;
-    --secondary: 220 60% 50%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 220 40% 60%;
-    --muted-foreground: 220 35% 45%;
-    --accent: 220 60% 50%;
-    --accent-foreground: 0 0% 98%;
-    --destructive: 0 72% 51%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 220 50% 80%;
-    --input: 220 50% 80%;
-    --ring: 220 70% 50%;
+    --background: hsl(220, 40%, 10%); /* Deep Navy Background */
+    --foreground: hsl(220, 50%, 96%);
 
+    --card: hsl(220, 30%, 15%);
+    --card-foreground: hsl(220, 50%, 96%);
+    --popover: hsl(220, 30%, 15%);
+    --popover-foreground: hsl(220, 50%, 96%);
+
+    --primary: hsl(178, 100%, 50%);
+    --primary-foreground: hsl(0, 0%, 100%);
+    --secondary: hsl(220, 100%, 25%);
+    --secondary-foreground: hsl(0, 0%, 100%);
+    
+    --muted: hsl(220, 30%, 20%);
+    --muted-foreground: hsl(220, 60%, 80%);
+
+    --accent: hsl(16, 100%, 65%);
+    --accent-foreground: hsl(0, 0%, 100%);
+
+    --destructive: hsl(16, 100%, 55%);
+    --destructive-foreground: hsl(0, 0%, 100%);
+
+    --border: hsl(220, 100%, 25%);
+    --input: hsl(220, 100%, 25%);
+    --ring: hsl(178, 100%, 50%);
   }
-}
-
-@layer base {
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-lora); /* Elegant serif */
   }
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    @apply font-playfair;
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-weight: 800;
+    letter-spacing: 1px;
   }
 }
 
-@layer utilities {
-  .font-playfair {
-    font-family: var(--font-playfair);
-  }
-}
+
+
+
 
 .bento-grid {
   display: grid;
@@ -144,4 +162,3 @@
     transform: translateX(0);
   }
 }
-

@@ -1,37 +1,40 @@
-import type React from "react"
-import type { Metadata } from "next"
-import { Inter, Playfair_Display } from "next/font/google"
-import "./globals.css"
-import Header from "@/components/header"
-import Footer from "@/components/footer"
-import { ThemeProvider } from "@/components/theme-provider"
+import type React from "react";
+import type { Metadata } from "next";
+import { Big_Shoulders_Display, Lora } from "next/font/google";
+import "./globals.css";
+import Header from "@/components/header";
+import Footer from "@/components/footer";
+import { ThemeProvider } from "@/components/theme-provider";
 
-const inter = Inter({
+const bigShouldersDisplay = Big_Shoulders_Display({
   subsets: ["latin"],
-  variable: "--font-inter",
-})
+  weight: "800",
+  variable: "--font-big-shoulders",
+});
 
-const playfair = Playfair_Display({
+const lora = Lora({
   subsets: ["latin"],
-  variable: "--font-playfair",
-})
+  weight: ["400", "700"],
+  variable: "--font-lora",
+});
 
 export const metadata: Metadata = {
   title: "ICISN 2026 - International Conference on Intelligent Systems and Networks",
   description:
     "Fifth International Conference on Intelligent Systems and Networks - Hanoi University of Industry, 22-23 March, 2025",
-    generator: 'v0.dev'
-}
+  generator: "v0.dev",
+};
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode
+  children: React.ReactNode;
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${inter.variable} ${playfair.variable} font-sans`}>
-        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
+      <body className={`${lora.variable} ${bigShouldersDisplay.variable}`} style={{ background: "var(--background)" }}>
+
+        <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
           <div className="flex min-h-screen flex-col">
             <Header />
             <main className="flex-1">{children}</main>
@@ -40,9 +43,5 @@ export default function RootLayout({
         </ThemeProvider>
       </body>
     </html>
-  )
+  );
 }
-
-
-
-import './globals.css'
