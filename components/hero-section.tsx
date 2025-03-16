@@ -53,13 +53,13 @@ export default function HeroSection() {
         <motion.h1
             ref={titleRef}
             style={{ y: yTransform,  }} // Apply motion
-            className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl"
+            className="text-3xl font-bold   sm:text-4xl md:text-5xl"
           >
             Fifth International Conference on
           </motion.h1>
           <motion.h2
-            ref={subtitleRef}
-            className="opacity-0 mt-2 text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl"
+            ref={ titleRef}
+            className="opacity-0 mt-2 text-4xl font-bold   sm:text-5xl md:text-6xl lg:text-7xl"
             style={{ y: yTransform,  }}
             
           >
@@ -70,7 +70,7 @@ export default function HeroSection() {
             className="opacity-0 mt-8 inline-block rounded-full border border-white/30 bg-black/30 px-6 py-3 backdrop-blur-sm"
             style={{ y: yTransform,  }}
           >
-            <p className="text-lg font-medium md:text-xl">Hanoi University of Industry, 21-22 March, 2026</p>
+            <p className="text-lg  font-medium md:text-xl">Hanoi University of Industry, 21-22 March, 2026</p>
           </motion.div>
         </div>
       </div>
