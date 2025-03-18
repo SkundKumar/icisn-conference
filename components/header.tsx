@@ -35,46 +35,50 @@ export default function Header() {
     <header
       className={cn(
         "fixed top-0 w-full z-50 transition-all duration-300",
-        scrolled ? "bg-background/80 backdrop-blur-md shadow-sm" : "bg-transparent",
+        scrolled || pathname !== "/" ? "bg-white/80 shadow-sm" : "bg-transparent"
       )}
     >
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex h-20 items-center justify-around">
           <Link href="/" className="flex items-center space-x-2" onClick={() => setIsOpen(false)}>
-            <span className={cn("text-2xl font-bold tracking-tighter font-playfair",
-              scrolled ? "text-primary" :pathname === "/" ?  "text-white" : "text-primary/70"
+            <span className={cn(
+              "text-2xl font-bold tracking-tighter font-playfair",
+              scrolled || pathname !== "/" ? "text-black" : "text-white"
             )}>ICISN</span>
           </Link>
-          <nav className="hidden md:flex  space-x-6">
+
+          <nav className="hidden md:flex space-x-6">
             {navItems.map((item) => (
               <Link
                 key={item.path}
                 href={item.path}
                 className={cn(
-                  
                   "text-sm font-medium tracking-wider transition-colors",
-                  
-                  
-                  pathname === item.path ? "text-primary border-b-2 border-primary pb-1" : pathname === "/" ?  "text-white" : "text-muted-foreground",
-                  scrolled ? "text-primary" :pathname === "/" ?  "text-white" : "text-primary/70"
+                  pathname === item.path
+                    ? "text-primary border-b-2 border-primary pb-1"
+                    : scrolled || pathname !== "/" ? "text-gray-900" : "text-white"
                 )}
               >
                 {item.name}
               </Link>
-              
             ))}
-            
           </nav>
-          <button className="relative px-6 py-2 font-medium text-primary border border-primary 
-  rounded-lg overflow-hidden transition-all duration-300 ease-in-out
-  before:absolute before:inset-0 before:bg-primary before:scale-x-0 before:origin-left 
-  before:transition-transform before:duration-300 before:ease-in-out
-  hover:before:scale-x-100 hover:text-white focus:outline-none focus:ring-2 focus:ring-primary/50 hover:bg-black">
-  Submit Papers
-</button>
+
+          <button
+            className={cn(
+              "relative px-6 py-2 font-medium border rounded-lg overflow-hidden transition-all duration-300 ease-in-out",
+              "before:absolute before:inset-0 before:scale-x-0 before:origin-left before:transition-transform before:duration-300 before:ease-in-out hover:before:scale-x-100 focus:outline-none focus:ring-2 focus:ring-primary/50",
+              scrolled || pathname !== "/"
+                ? "text-primary border-primary before:bg-primary hover:text-white hover:bg-black"
+                : "text-black border-black  hover:text-white hover:bg-black"
+            )}
+          >
+            Submit Papers
+          </button>
+
           <Button variant="ghost" size="icon" className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
-            <Menu className={cn("h-6 w-6", isOpen ? "hidden" : "block")} />
-            <X className={cn("h-6 w-6", isOpen ? "block" : "hidden")} />
+            <Menu className={cn("h-6 w-6", isOpen ? "hidden" : "block", scrolled || pathname !== "/" ? "text-black" : "text-white")} />
+            <X className={cn("h-6 w-6", isOpen ? "block" : "hidden", scrolled || pathname !== "/" ? "text-black" : "text-white")} />
             <span className="sr-only">Toggle menu</span>
           </Button>
         </div>
@@ -84,7 +88,7 @@ export default function Header() {
       <div
         className={cn(
           "md:hidden fixed inset-0 top-20 bg-background z-40 transform transition-transform duration-300 ease-in-out",
-          isOpen ? "translate-x-0" : "translate-x-full",
+          isOpen ? "translate-x-0" : "translate-x-full"
         )}
       >
         <nav className="flex flex-col p-6 space-y-6 bg-white">
@@ -94,7 +98,7 @@ export default function Header() {
               href={item.path}
               className={cn(
                 "text-lg font-medium tracking-wider transition-colors hover:text-primary",
-                pathname === item.path ? "text-primary border-b border-primary pb-1" : "text-muted-foreground",
+                pathname === item.path ? "text-primary border-b border-primary pb-1" : "text-gray-900"
               )}
               onClick={() => setIsOpen(false)}
             >
@@ -106,4 +110,3 @@ export default function Header() {
     </header>
   )
 }
-
