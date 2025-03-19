@@ -45,7 +45,7 @@ export default function HeroSection() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            Fifth International Conference on
+            Sixth International Conference on
           </motion.h1>
           <motion.h2
             className="mt-2 text-white font-semibold leading-snug text-3xl sm:text-4xl md:text-5xl lg:text-5xl"
@@ -61,7 +61,7 @@ export default function HeroSection() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            Hanoi, Vietnam, date and year
+            Hanoi, Vietnam
           </motion.h2>
           <motion.div
             className="mt-4 inline-block rounded-full border border-white/30 bg-black/40 px-4 py-2 md:px-6 md:py-3 backdrop-blur-md"

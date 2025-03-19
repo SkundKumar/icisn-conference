@@ -55,8 +55,13 @@ export default function Header() {
                 className={cn(
                   "text-sm font-medium tracking-wider transition-colors",
                   pathname === item.path
-                    ? "text-primary border-b-2 border-primary pb-1"
-                    : scrolled || pathname !== "/" ? "text-gray-900" : "text-white"
+  ? pathname === "/" 
+    ? "text-white border-b-2 border-white pb-1" 
+    : "text-primary border-b-2 border-primary pb-1"
+  : scrolled || pathname !== "/" 
+    ? "text-gray-900" 
+    : "text-white"
+
                 )}
               >
                 {item.name}
@@ -98,7 +103,8 @@ export default function Header() {
               href={item.path}
               className={cn(
                 "text-lg font-medium tracking-wider transition-colors hover:text-primary",
-                pathname === item.path ? "text-primary border-b border-primary pb-1" : "text-gray-900"
+                pathname === item.path ? "text-primary border-b border-primary pb-1" : "text-gray-900",
+                
               )}
               onClick={() => setIsOpen(false)}
             >

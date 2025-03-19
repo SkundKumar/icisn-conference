@@ -34,7 +34,7 @@ export default function WelcomeSection() {
       <div className="container mx-auto px-4 md:px-6">
         <h2
           ref={titleRef}
-          className="opacity-0 text-3xl font-bold tracking-tighter text-center sm:text-4xl md:text-5xl"
+          className="opacity-0 text-5xl font-bold tracking-tighter text-center sm:text-4xl md:text-6xl"
         >
           WELCOME TO ICISN 2026
         </h2>

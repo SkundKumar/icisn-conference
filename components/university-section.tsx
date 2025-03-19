@@ -46,7 +46,7 @@ export default function UniversitySection() {
       <div className="container mx-auto px-4 md:px-6">
         <h2
           ref={titleRef}
-          className="opacity-0 text-3xl font-bold tracking-tighter text-center sm:text-4xl md:text-5xl"
+          className="opacity-0 text-3xl font-bold tracking-tighter text-center sm:text-4xl md:text-6xl"
         >
           Hanoi University of Industry (HaUI)
         </h2>
