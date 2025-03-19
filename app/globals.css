@@ -6,6 +6,11 @@
 
 @layer base {
   :root {
+    --color-1: 220, 90%, 56%;
+  --color-2: 340, 90%, 56%;
+  --color-3: 40, 90%, 56%;
+  --color-4: 120, 90%, 56%;
+  --color-5: 260, 90%, 56%;
     /* 🎓 ACADEMIC & PROFESSIONAL COLORS */
     --background: hsl(220, 50%, 96%); /* Light Grayish Blue */
     --foreground: hsl(220, 100%, 20%); /* Deep Navy Blue */
