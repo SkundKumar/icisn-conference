@@ -33,14 +33,14 @@ export default function HeroSection() {
         </div>
       </div>
 
-      {/* Text Section - Smaller & More to the Left */}
-      <div className="relative z-10 w-full px-4 md:px-8 lg:px-12 flex mt-52 md:ml-20 ">
+      {/* Text Section - Kept Left-Aligned but Increased Vertical Scaling */}
+      <div className="relative z-10 w-full px-4 md:px-8 lg:px-12 flex mt-52 md:ml-20">
         <div
           ref={containerRef}
-          className="max-w-screen-md "
+          className="max-w-screen-md"
         >
           <motion.h1
-            className="text-white font-semibold leading-snug text-2xl sm:text-3xl md:text-4xl lg:text-7xl"
+            className="text-white font-semibold ml-4 leading-tight text-4xl sm:text-5xl md:text-6xl lg:text-7xl"
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
@@ -48,7 +48,7 @@ export default function HeroSection() {
             Sixth International Conference on
           </motion.h1>
           <motion.h2
-            className="mt-2 text-white font-semibold leading-snug text-3xl sm:text-4xl md:text-5xl lg:text-5xl"
+            className="mt-2 text-white font-semibold ml-4 leading-tight text-5xl sm:text-6xl md:text-7xl lg:text-8xl"
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
@@ -56,7 +56,7 @@ export default function HeroSection() {
             Intelligent Systems and Networks
           </motion.h2>
           <motion.h2
-            className="mt-2 text-white leading-snug text-xl sm:text-xl md:text-2xl lg:text-3xl"
+            className="mt-2 text-white ml-4 leading-tight text-3xl sm:text-4xl md:text-5xl lg:text-5xl"
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
@@ -64,12 +64,12 @@ export default function HeroSection() {
             Hanoi, Vietnam
           </motion.h2>
           <motion.div
-            className="mt-4 inline-block rounded-full border border-white/30 bg-black/40 px-4 py-2 md:px-6 md:py-3 backdrop-blur-md"
+            className="mt-6 inline-block rounded-full border border-white/30 bg-black/40 px-6 py-3 md:px-6 md:py-3 backdrop-blur-md"
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            <p className="text-white text-sm sm:text-lg md:text-xl lg:text-2xl font-medium">
+            <p className="text-white text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium">
               Hanoi University of Industry, 21-22 March, 2026
             </p>
           </motion.div>
