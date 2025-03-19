@@ -7,7 +7,7 @@ export default function Footer() {
             <span className="text-xl font-bold tracking-tighter font-playfair">ICISN</span>
           </div>
           <p className="text-center text-sm text-muted-foreground">
-            Copyright © {new Date().getFullYear()} ICISN, All Right Reserved
+            Copyright © 2026 ICISN, All Right Reserved
           </p>
         </div>
       </div>

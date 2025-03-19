@@ -151,6 +151,15 @@
     transform: translateY(0);
   }
 }
+@keyframes slow-move {
+  0% { transform: scale(1); border-color: rgba(0, 0, 0, 0.1); }
+  50% { transform: scale(1.02); border-color: rgba(0, 0, 0, 0.2); }
+  100% { transform: scale(1); border-color: rgba(0, 0, 0, 0.1); }
+}
+
+.animate-slow-move {
+  animation: slow-move 6s ease-in-out infinite;
+}
 
 @keyframes slideInRight {
   from {

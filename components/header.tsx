@@ -10,7 +10,7 @@ import { usePathname } from "next/navigation"
 const navItems = [
   { name: "HOME", path: "/" },
   { name: "COMMITTEE", path: "/committee" },
-  { name: "KEYNOTE SPEAKERS", path: "/keynote-speakers" },
+  { name: "KEYNOTE SPEAKERS", path: "#" },
   { name: "CALL FOR PAPERS", path: "/call-for-papers" },
   { name: "FOR ATTENDEES", path: "/for-attendees" },
   { name: "HISTORY", path: "/history" },
@@ -70,16 +70,16 @@ export default function Header() {
           </nav>
 
           <button
-            className={cn(
-              "relative px-6 py-2 font-medium border rounded-lg overflow-hidden transition-all duration-300 ease-in-out",
-              "before:absolute before:inset-0 before:scale-x-0 before:origin-left before:transition-transform before:duration-300 before:ease-in-out hover:before:scale-x-100 focus:outline-none focus:ring-2 focus:ring-primary/50",
-              scrolled || pathname !== "/"
-                ? "text-primary border-primary before:bg-primary hover:text-white hover:bg-black"
-                : "text-black border-black  hover:text-white hover:bg-black"
-            )}
-          >
-            Submit Papers
-          </button>
+  className={cn(
+    "relative px-6 py-2 font-medium border rounded-full overflow-hidden transition-all duration-300 ease-in-out",
+    "before:absolute before:inset-0 before:scale-x-0 before:origin-left before:transition-transform before:duration-300 before:ease-in-out hover:before:scale-x-100 focus:outline-none focus:ring-2 focus:ring-primary/50",
+    scrolled || pathname !== "/"
+      ? "text-primary border-primary before:bg-primary hover:text-white hover:bg-black hover:scale-105 hover:shadow-lg"
+      : "text-black border-black hover:text-white hover:bg-black hover:scale-105 hover:shadow-lg"
+  )}
+>
+  Submit Papers
+</button>
 
           <Button variant="ghost" size="icon" className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
             <Menu className={cn("h-6 w-6", isOpen ? "hidden" : "block", scrolled || pathname !== "/" ? "text-black" : "text-white")} />
