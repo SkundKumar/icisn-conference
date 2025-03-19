@@ -55,12 +55,12 @@ export default function Header() {
                 className={cn(
                   "text-sm font-medium tracking-wider transition-colors",
                   pathname === item.path
-  ? pathname === "/" 
-    ? "text-white border-b-2 border-white pb-1" 
-    : "text-primary border-b-2 border-primary pb-1"
-  : scrolled || pathname !== "/" 
-    ? "text-gray-900" 
-    : "text-white"
+      ? scrolled || pathname !== "/"
+        ? "text-black border-b-2 border-black pb-1" // Black when scrolled
+        : "text-white border-b-2 border-white pb-1" // White when not scrolled
+      : scrolled || pathname !== "/"
+        ? "text-gray-900"
+        : "text-white"
 
                 )}
               >
