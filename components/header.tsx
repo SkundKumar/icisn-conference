@@ -13,7 +13,7 @@ const navItems = [
   { name: "KEYNOTE SPEAKERS", path: "#" },
   { name: "CALL FOR PAPERS", path: "/call-for-papers" },
   { name: "FOR ATTENDEES", path: "/for-attendees" },
-  { name: "HISTORY", path: "/history" },
+  { name: "HISTORY", path: "#" },
   { name: "CONTACT US", path: "/contact" },
 ];
 
