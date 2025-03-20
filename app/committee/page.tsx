@@ -40,7 +40,7 @@ const committees = {
     {
       name: "Vijender Kr Solanki",
       title: "Ph.D",
-      role: "CMR Institute of Technology, Hyderabad, India"
+      role: "Stanley Institute of Technology, Hyderabad, India"
     }
   ],
   organisingCommittee: [
